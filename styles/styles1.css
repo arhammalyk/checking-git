@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* header css start */
+
+.header-container-left img {
+  width: 100%;
+  height: 100%;
+}
+.header-container-right h1 {
+  width: 60%;
+  font-size: xx-large;
+  font-weight: bold;
+}
+.header-container-right p {
+  margin: 15px 0;
+  font-size: smaller;
+  color: rgb(49, 49, 49);
+}
+.header-container-right h2 {
+  font-size: medium;
+  margin-bottom: 5px;
+  color: rgb(36, 68, 108);
+}
+.header-container-right button {
+  border: 0;
+  background-color: rgb(36, 68, 108);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px 20px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+/*header css for screens less then 767px 
+for small devices and extra small devices */
+@media only screen and (max-width: 767px) {
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    margin: 0 auto;
+  }
+  .header-container-left {
+    width: 100%;
+    height: 100%;
+  }
+  .header-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 215, 217, 255);
+  }
+}
+/*header css for screens greater then 768px 
+for medium devices and large and extra large devices */
+@media only screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .header-container-left {
+    width: 45%;
+    height: 100%;
+  }
+  .header-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px;
+    width: 55%;
+    height: 100%;
+    background-color: rgba(214, 215, 217, 255);
+  }
+}
+/* header css end */
+
+/* main css start */
+/* section1 css start */
+.section1-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(36, 68, 108);
+  padding: 20px 0;
+}
+.section1-container > p {
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 15px;
+  color: white;
+}
+
+.section1-container-box h2 {
+  font-size: large;
+  margin: 10px 0;
+}
+.section1-container-box p {
+  font-size: medium;
+}
+/*section1 css for screens less then 767px 
+for small devices and extra small devices */
+@media only screen and (max-width: 768px) {
+  .section1-container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  .section1-container-box {
+    background-color: white;
+    width: 50%;
+    padding: 15px;
+  }
+}
+/*section1 css for screens greater then 768px 
+for medium devices and large and extra large devices */
+@media only screen and (min-width: 768px) {
+  .section1-container-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  .section1-container-box {
+    background-color: white;
+    width: 25%;
+    padding: 15px;
+  }
+}
+/* section1 css end */
+
+/* section2 css start */
+
+.section2-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+.section2-container img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.overlay > h3 {
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+.overlay > p {
+  color: white;
+  font-size: x-small;
+  text-align: center;
+}
+.section2-container-flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+.section2-container-box {
+  background-color: rgb(36, 68, 108);
+  color: white;
+  width: 18%;
+  padding: 15px;
+}
+.section2-container-box h2 {
+  font-size: large;
+  margin: 10px 0;
+}
+.section2-container-box p {
+  font-size: small;
+  color: rgb(206, 206, 206);
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#contact-form div {
+  margin: 0 1px;
+}
+#contact-form input {
+  height: 30px;
+}
+#contact-form button {
+  background-color: rgb(36, 68, 108);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+/* section2 css for screens size less then 1200px */
+@media only screen and (max-width: 1200px) {
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    background-color: aliceblue;
+    padding: 20px 10px;
+  }
+}
+/* section2 css for screens size greater then 1200px */
+@media only screen and (min-width: 1200px) {
+  #contact-form {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    background-color: aliceblue;
+    padding: 20px 10px;
+  }
+}
+/* section 2 css end */
+
+/* footer css start */
+.footer-container {
+  margin: 0 auto;
+  background-color: rgb(52, 52, 52);
+}
+.footer-container p {
+  font-size: small;
+  color: rgb(214, 214, 214);
+  text-align: center;
+  padding: 30px;
+}
+/* footer css end */
